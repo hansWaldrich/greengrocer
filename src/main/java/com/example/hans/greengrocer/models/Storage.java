@@ -17,6 +17,7 @@ public class Storage {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "storage_id")
     private Long id;
     @Column
     private String name;

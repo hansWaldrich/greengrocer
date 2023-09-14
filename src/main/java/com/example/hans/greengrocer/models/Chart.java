@@ -25,7 +25,7 @@ public class Chart {
     private Set<ChartItem> items;
     @OneToOne
     @JoinColumns({
-            @JoinColumn(name = "customer_id", referencedColumnName = "id"),
+            @JoinColumn(name = "customer_id", referencedColumnName = "customer_id"),
             @JoinColumn(name = "customer_phone_id", referencedColumnName = "phone")
     })
     private Customer customer;
